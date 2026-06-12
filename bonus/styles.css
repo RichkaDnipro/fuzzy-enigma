@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h2 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+#scoreboard {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    display: flex;
+    gap: 30px;
+    font-size: 1.1rem;
+    align-items: center;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+#scoreboard .status-container {
+    min-width: 180px;
+    display: inline-block;
+}
+
+#scoreboard div:last-child {
+    margin-left: auto;
+}
+
+.status-win { color: #2ecc71; font-weight: bold; }
+.status-lose { color: #e74c3c; font-weight: bold; }
+.status-process { color: #f1c40f; font-weight: bold; }
+        
+#wdr-component {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 6px;
+}
+
+#wdr-component .wdr-grid-layout .wdr-cell {
+    height: 60px;
+    padding: 0
+}
+
+#wdr-component .wdr-grid-layout .wdr-header {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#mode-toggle {
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.mode-dig {
+    background-color: #34495e;
+    color: #fff;
+}
+
+.mode-flag {
+    background-color: #f1c40f;
+    color: #000;
+}
+
+#restart-btn {
+    display: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+    color: #080808;
+    border: 1px solid #080808;
+    border-radius: 4px;
+}

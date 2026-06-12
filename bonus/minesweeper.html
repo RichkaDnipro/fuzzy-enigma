@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Сапер</title>
+    
+    <link href="https://cdn.webdatarocks.com/latest/webdatarocks.min.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="https://cdn.webdatarocks.com/latest/webdatarocks.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Сапер</h2> 
+    <div id="scoreboard">
+        <div class="status-container">Статус: <span id="game-process-status" class="status-process">В процесі</span></div>
+        <div>Мін на полі: <span id="mines-count">15</span></div>
+        <div>
+            <button id="mode-toggle" class="mode-dig" onclick="toggleGameMode()">
+                Відкрити клітинку
+            </button>
+        </div>
+        <div>
+            <button id="restart-btn" onclick="restartGame()">
+                Грати знову?
+            </button>
+        </div>
+    </div>
+
+    <div id="wdr-component"></div>
+</div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
